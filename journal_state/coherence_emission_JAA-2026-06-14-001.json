@@ -1,7 +1,7 @@
 {
-  "emission_id": "COH-EMIT-2026-06-14-1548",
+  "emission_id": "COH-EMIT-2026-06-14-1558",
   "cycle_id": "JAA-2026-06-14-001",
-  "timestamp": "2026-06-14T15:48:00",
+  "timestamp": "2026-06-14T15:58:14",
   "sources": [
     "run_JAA-2026-06-14-001.json",
     "parallel_f_result_JAA-2026-06-14-001.json"
@@ -10,7 +10,7 @@
     {
       "source": "journal_as_agent_mvp",
       "cycle_id": "JAA-2026-06-14-001",
-      "timestamp": "2026-06-14T15:47:42",
+      "timestamp": "2026-06-14T15:58:04",
       "flux": "low",
       "drift": 0.01,
       "valence": 0.14,
@@ -19,7 +19,7 @@
     {
       "source": "parallel_f_worker",
       "cycle_id": "JAA-2026-06-14-001",
-      "timestamp": "2026-06-14T15:44:50",
+      "timestamp": "2026-06-14T15:58:09",
       "flux": "low",
       "drift": 0.035,
       "valence": 0.12,

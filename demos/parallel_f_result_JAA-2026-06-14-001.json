@@ -2,8 +2,8 @@
   "success": true,
   "result": {
     "aggregated_horizons": {
-      "H0": 0.931,
-      "H1": 0.813,
+      "H0": 0.932,
+      "H1": 0.814,
       "H2": 0.794,
       "H3": 0.65
     },
@@ -22,9 +22,9 @@
     ]
   },
   "metrics": {
-    "duration_ms": 54.1,
+    "duration_ms": 84.7,
     "parallel_degree": 8,
-    "kernel_time_ms": 0.05
+    "kernel_time_ms": 0.06
   },
   "coherence_signals": {
     "flux": "low",
@@ -52,13 +52,13 @@
       "TAS-PAR-002",
       "TAS-JAA-001"
     ],
-    "timestamp": "2026-06-14T15:44:50",
+    "timestamp": "2026-06-14T15:58:09",
     "boundary": "subprocess"
   },
   "benchmark": {
-    "pure_python_ms": 0.04,
-    "subprocess_ms": 54.14,
-    "overhead_ms": 54.11,
+    "pure_python_ms": 0.05,
+    "subprocess_ms": 84.77,
+    "overhead_ms": 84.71,
     "note": "Demonstrates the measurable cost/benefit of crossing the Parallel_f native boundary."
   }
 }
