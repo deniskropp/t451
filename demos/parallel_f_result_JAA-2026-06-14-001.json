@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "result": {
+    "aggregated_horizons": {
+      "H0": 0.931,
+      "H1": 0.813,
+      "H2": 0.794,
+      "H3": 0.65
+    },
+    "average_risk": 0.085,
+    "suggested_next": [
+      {
+        "id": "TAS-PAR-003",
+        "desc": "Benchmark real Parallel_f impl vs Python baseline for forecast aggregation",
+        "horizon": "H1"
+      },
+      {
+        "id": "COH-EMIT-001",
+        "desc": "Emit aggregated coherence signals to CoherenceMonitorBridge for this cycle",
+        "horizon": "H0"
+      }
+    ]
+  },
+  "metrics": {
+    "duration_ms": 54.1,
+    "parallel_degree": 8,
+    "kernel_time_ms": 0.05
+  },
+  "coherence_signals": {
+    "flux": "low",
+    "drift": 0.035,
+    "valence": 0.12,
+    "notes": "Native aggregation over 4 TAS inputs; risk rollup 0.085 (via subprocess)"
+  },
+  "next_tas_hints": [
+    {
+      "id": "TAS-PAR-003",
+      "desc": "Benchmark real Parallel_f impl vs Python baseline for forecast aggregation",
+      "horizon": "H1"
+    },
+    {
+      "id": "COH-EMIT-001",
+      "desc": "Emit aggregated coherence signals to CoherenceMonitorBridge for this cycle",
+      "horizon": "H0"
+    }
+  ],
+  "halt_reasons": [],
+  "provenance": {
+    "node_id": "parallel-forecast-aggregator",
+    "cycle_id": "JAA-2026-06-14-001",
+    "tas_ids": [
+      "TAS-PAR-002",
+      "TAS-JAA-001"
+    ],
+    "timestamp": "2026-06-14T15:44:50",
+    "boundary": "subprocess"
+  },
+  "benchmark": {
+    "pure_python_ms": 0.04,
+    "subprocess_ms": 54.14,
+    "overhead_ms": 54.11,
+    "note": "Demonstrates the measurable cost/benefit of crossing the Parallel_f native boundary."
+  }
+}

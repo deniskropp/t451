@@ -1,0 +1,47 @@
+{
+  "emission_id": "COH-EMIT-2026-06-14-1548",
+  "cycle_id": "JAA-2026-06-14-001",
+  "timestamp": "2026-06-14T15:48:00",
+  "sources": [
+    "run_JAA-2026-06-14-001.json",
+    "parallel_f_result_JAA-2026-06-14-001.json"
+  ],
+  "signals": [
+    {
+      "source": "journal_as_agent_mvp",
+      "cycle_id": "JAA-2026-06-14-001",
+      "timestamp": "2026-06-14T15:47:42",
+      "flux": "low",
+      "drift": 0.01,
+      "valence": 0.14,
+      "notes": "journal delta run (operational v0.2) - high alignment per provenance"
+    },
+    {
+      "source": "parallel_f_worker",
+      "cycle_id": "JAA-2026-06-14-001",
+      "timestamp": "2026-06-14T15:44:50",
+      "flux": "low",
+      "drift": 0.035,
+      "valence": 0.12,
+      "notes": "Native aggregation over 4 TAS inputs; risk rollup 0.085 (via subprocess)",
+      "related_tas": [
+        "TAS-PAR-002",
+        "TAS-PAR-003",
+        "COH-EMIT-001"
+      ]
+    }
+  ],
+  "aggregate": {
+    "overall_flux": "low",
+    "max_drift": 0.035,
+    "avg_valence": 0.13,
+    "num_sources": 2
+  },
+  "target": "CoherenceMonitorBridge / living-objective-tas-flow",
+  "meta_dna_tags": [
+    "denis_kropp_dna",
+    "co_agency",
+    "kicklang",
+    "ocs"
+  ]
+}
